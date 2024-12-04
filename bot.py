@@ -18,4 +18,9 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Hello {ctx.author.name}!')
 
+@bot.command(name='opgg')
+async def opgg(ctx, username: str):
+    opgg_url = f"https://www.op.gg/summoners/jp/{username}-JP1"
+    await ctx.send(f"{username}のOP.GG URLは: {opgg_url}")
+
 bot.run(TOKEN)
