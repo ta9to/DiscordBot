@@ -1,4 +1,4 @@
-from openai_handler import OpenAIHandler
+from src.openai_handler import OpenAIHandler
 
 def test_openai_handler_add_message():
     handler = OpenAIHandler()
